@@ -102,15 +102,15 @@ TestBaseModel class:
 * `def test_user_class_docstring(self)` - Tests for the User class docstring
 
 
-## Examples of use
+## 5. Examples of use
 
-# Bugs
+# 6. Bugs
 #### No known bugs at this time
-# Authors
+# 7. Authors
 |Name | Github Account|
 |-----|-------|
 |Dagmawi Andualem|[Github](https://github.com/Iwamgad)|
 |Tsion Zerihun|[Github](https://github.com/TsionZerihun)|
 
-# License
+# 8. License
 Public Domain. No copy write protection.
