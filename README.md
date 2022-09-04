@@ -104,13 +104,13 @@ TestBaseModel class:
 
 ## 5. Examples of use
 
-# 6. Bugs
+## 6. Bugs
 #### No known bugs at this time
-# 7. Authors
+## 7. Authors
 |Name | Github Account|
 |-----|-------|
 |Dagmawi Andualem|[Github](https://github.com/Iwamgad)|
 |Tsion Zerihun|[Github](https://github.com/TsionZerihun)|
 
-# 8. License
+## 8. License
 Public Domain. No copy write protection.
