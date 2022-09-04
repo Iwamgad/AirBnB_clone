@@ -103,6 +103,10 @@ TestBaseModel class:
 
 
 ## 5. Examples of use
+vagrantAirBnB_clone$./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
 
 ## 6. Bugs
 #### No known bugs at this time
