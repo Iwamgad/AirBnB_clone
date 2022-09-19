@@ -105,4 +105,5 @@
 .description > p {
     margin-top: 7px;
     margin-bottom: 0px;
+    text-align: justify;
 }
