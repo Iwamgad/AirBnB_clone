@@ -8,13 +8,14 @@ from datetime import datetime
 
 timeFormat = "%Y-%m-%dT%H:%M:%S.%f"
 
+
 class BaseModel:
     """A BaseModel class"""
 
     def __init__(self, *args, **kwargs):
         """Initializes a new BaseModel object
         Args:
-            *arg (any): unused 
+            *arg (any): unused
             **kwargs(dict): key/value pairs of attribute
         Raises:
             AttributeError: if attribute is null
@@ -45,7 +46,8 @@ class BaseModel:
         return "[{}]({}) {}".format(clname, self.id, self.__dict__)
 
     def save(self):
-        """Updates the public instance attribute updated_at with the current datetime"""
+        """Updates the public instance attribute updated_at with the
+        current datetime"""
         self.updated_at = datetime.today()
         models.storage.save()
 

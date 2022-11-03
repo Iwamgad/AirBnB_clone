@@ -4,6 +4,7 @@
 
 from models.base_model import BaseModel
 
+
 class Review(BaseModel):
     """A Review class
     Attributes:

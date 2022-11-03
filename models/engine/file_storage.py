@@ -15,7 +15,7 @@ from models.state import State
 class FileStorage:
     """Represent an abstracted storage engine
     Attributes:
-        __file_path (str): path to the JSON file 
+        __file_path (str): path to the JSON file
         __objects (dict): empty but will store all objects by <class name>.id
     """
     __file_path = "file.json"
@@ -39,7 +39,8 @@ class FileStorage:
             json.dump(dictObj, j)
 
     def reload(self):
-        """deserializes the JSON file to __objects (only if the JSON file (__file_path) exists ; otherwise, do nothing. 
+        """deserializes the JSON file to __objects (only if the JSON file
+        (__file_path) exists ; otherwise, do nothing.
         If the file doesn’t exist, no exception should be raised)
         """
         try:
