@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 
 """This module tests the BaseModel class"""
 

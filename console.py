@@ -44,7 +44,7 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, arg):
-        """Creates a new instance of BaseModel, saves it (to the JSON file) 
+        """Creates a new instance of BaseModel, saves it (to the JSON file)
         and prints the id
         Usage: create <class>
         """
@@ -58,7 +58,7 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
 
     def do_show(self, arg):
-        """Prints the string representation of an instance based on 
+        """Prints the string representation of an instance based on
         the class name and id
         Usage: show <class> <id>
         """
@@ -95,11 +95,11 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
 
     def do_all(self, arg):
-        """Prints all string representation of all instances 
+        """Prints all string representation of all instances
         based or not on the class name
         Usage: all or all <class>
         """
-        
+
         argl = shlex.split(arg)
         if len(argl) > 0 and argl[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
@@ -113,7 +113,7 @@ class HBNBCommand(cmd.Cmd):
             print(objl)
 
     def do_update(self, arg):
-        """Updates an instance based on the class name and id by 
+        """Updates an instance based on the class name and id by
         adding or updating attribute
         Usage: update <class> <id> <attribute_name> <attribute_value>
         """
