@@ -4,6 +4,7 @@ from json import dump, load
 from os.path import exists
 import sys
 
+
 class FileStorage:
     """Represent an abstracted storage engine
     Attributes:
@@ -13,7 +14,6 @@ class FileStorage:
 
     __file_path = "file.json"
     __objects = {}
-
 
     def all(self):
         """Returns the dictionary __objects"""
