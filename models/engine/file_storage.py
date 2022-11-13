@@ -49,3 +49,6 @@ class FileStorage:
                 del v['__class__']
                 obj = BaseModel(**v)
                 self.new(obj)
+        else:
+            return
+                
