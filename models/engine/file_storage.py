@@ -44,6 +44,6 @@ class FileStorage:
                 objDict = load(file)
 
             for v in objDict.values():
-                name = v["__class__"]
                 del v['__class__']
-                self.new(eval(name)(**v))
+                obj = BaseModel(**v)
+                self.new(obj)
