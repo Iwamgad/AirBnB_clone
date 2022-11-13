@@ -2,7 +2,7 @@
 """This module defines the FileStorage class"""
 from json import dump, load
 from os.path import exists
-
+import sys
 
 class FileStorage:
     """Represent an abstracted storage engine
@@ -48,5 +48,3 @@ class FileStorage:
                 name = v["__class__"]
                 del v['__class__']
                 self.new(eval(name)(**v))
-        else:
-            return
