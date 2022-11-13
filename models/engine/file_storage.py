@@ -15,15 +15,18 @@ class FileStorage:
 
     def all(self):
         """Returns the dictionary __objects"""
+
         return FileStorage.__objects
 
     def new(self, obj):
         """Sets in __objects the obj with key <obj class name>.id"""
+
         key = type(obj).__name__ + "." + obj.id
         FileStorage.__objects[key] = obj
 
     def save(self):
         """Serializes __objects to the JSON file (path: __file_path)"""
+
         from models.base_model import BaseModel
         fileName = FileStorage.__file_path
         objects = FileStorage.__objects
@@ -36,6 +39,7 @@ class FileStorage:
 
     def reload(self):
         """Deserializes the JSON file to __objects (only if the JSON file"""
+
         from models.base_model import BaseModel
         fileName = FileStorage.__file_path
         if exists(fileName):
