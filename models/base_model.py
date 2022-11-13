@@ -7,6 +7,7 @@ from models import storage
 
 timeFormat = "%Y-%m-%dT%H:%M:%S.%f"
 
+
 class BaseModel:
     def __init__(self, *args, **kwargs):
         """Initializes a new BaseModel object
