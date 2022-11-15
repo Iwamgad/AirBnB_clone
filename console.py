@@ -4,6 +4,7 @@
 import cmd
 from models import storage
 
+
 class HBNBCommand(cmd.Cmd):
     """An HBNBCommand class
     Attributes:
@@ -31,7 +32,7 @@ class HBNBCommand(cmd.Cmd):
         """
         if len(args) == 0:
             print("** class name missing **")
-        elif args != "BaseModel" :
+        elif args != "BaseModel":
             print("** class doesn't exist **")
         else:
             from models.base_model import BaseModel
@@ -45,10 +46,10 @@ class HBNBCommand(cmd.Cmd):
         Usage: show <class> <id>
         """
         argList = args.split()
-       
+
         if len(argList) == 0:
             print("** class name missing **")
-        elif argList[0] != "BaseModel" :
+        elif argList[0] != "BaseModel":
             print("** class doesn't exist **")
         elif len(argList) < 2:
             print("** instance id missing **")
@@ -62,10 +63,10 @@ class HBNBCommand(cmd.Cmd):
         Usage: destroy <class> <id>
         """
         argList = args.split()
-       
+
         if len(argList) == 0:
             print("** class name missing **")
-        elif argList[0] != "BaseModel" :
+        elif argList[0] != "BaseModel":
             print("** class doesn't exist **")
         elif len(argList) < 2:
             print("** instance id missing **")
@@ -74,6 +75,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             del storage.all()["{}.{}".format(argList[0], argList[1])]
             storage.save()
+
     def do_all(self, args):
         """Prints all string representation of all instances
         based or not on the class name
@@ -102,7 +104,7 @@ class HBNBCommand(cmd.Cmd):
 
         if len(argList) == 0:
             print("** class name missing **")
-        elif argList[0] != "BaseModel" :
+        elif argList[0] != "BaseModel":
             print("** class doesn't exist **")
         elif len(argList) < 2:
             print("** instance id missing **")
@@ -121,7 +123,8 @@ class HBNBCommand(cmd.Cmd):
             objectKey = className + "." + id
             object = storage.all()[objectKey]
             object.__dict__[key] = eval(value)
-            storage.save()   
-        
+            storage.save()
+
+
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
